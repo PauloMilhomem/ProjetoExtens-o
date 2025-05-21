@@ -1,4 +1,7 @@
 @media (min-width: 1360px){
+  html {
+    scroll-behavior: smooth;
+  }
   body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -245,4 +248,105 @@
     margin-bottom: 15px;
     font-size: 20px;
   }
+  /* Footer daqui pra baixo */
+  .footer {
+    background-color:#E21C21;
+    color: white;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+}
+  .footer-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-bottom: 15px;
+    border-bottom: 0.5px solid #ffffff;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 15px;
+  }
+
+  .footer-column {
+    flex: 1;
+    max-width: 300px;
+    margin: 20px 10px;
+  }
+
+  .footer-column h3 {
+    color: #ffffff;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+  }
+
+  .footer-column p {
+    margin: 10px 0;
+    font-size: 14px;
+    color: white;
+  }
+
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footer-column ul li {
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+  }
+
+  .footer-column ul li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .footer-column ul li a:hover {
+    text-decoration: underline;
+  }
+  .btn-footer{
+    background-color: white;
+    color: #c62828 !important;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.25s ease, color 0.25s ease;
+  }
+  .btn-footer:hover{
+    background-color: #7e1d1d;
+    color: #ffffff !important;
+    text-decoration: none !important;
+
+  }
+  .icon-red{
+    color:  #ee2b2b !important;
+    font-size: 20px !important;
+    padding-right: 8px;
+  }
+  
+  .social-icons-footer a:hover{
+    color: #d3d3d3;
+  }
+  
+  .social-icons-footer a {
+    margin-left: 10px;
+    font-size: 18px;
+    color:#ffffff;
+    padding: 5px;
+    font-size: 30px;
+    transition: 0.25s ease, color 0.25s ease;
+  }
+  .cert{
+    height: 60px;
+  }
+
 }

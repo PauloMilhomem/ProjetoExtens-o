@@ -16,3 +16,7 @@ buttons.forEach(button => {
     delete activeSlide.dataset.active
   })
 })
+
+document.getElementById('voltarTopo').addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });

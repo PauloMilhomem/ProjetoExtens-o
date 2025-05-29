@@ -35,24 +35,27 @@
         </div>
       </div>
       <div class="social-icons">
-        <a href="https://www.facebook.com/AFROficial/"><i class="fa-brands fa-facebook"></i></a>
-        <a href="https://www.instagram.com/afr.oficial/"><i class="fa-brands fa-instagram"></i></a>
-        <a href="https://www.youtube.com/channel/UCU9QXygeNJ2Z7h2pfiiZ2uA"><i class="fa-brands fa-youtube"></i></a>
+        <a href="https://www.facebook.com/AFROficial/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/afr.oficial/"target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCU9QXygeNJ2Z7h2pfiiZ2uA"target="_blank"><i class="fa-brands fa-youtube"></i></a>
       </div>
       <div class="info-block">
-        <a href="#" class="btn"><i class="icon-white fa-solid fa-heart"></i>Fazer Doação</a>
+        <a href="doacao.html" class="btn"><i class="icon-white fa-solid fa-heart"></i>Fazer Doação</a>
       </div>
     </div>
+    <button class="menu-toggle" onclick="toggleMenu(this)">
+      <span></span><span></span><span></span>
+    </button>
   </header>
   <nav class="main-nav">
     <ul>
+      <li><a href="index.html">Home</a></li>
       <li class="dropdown">
         <a href="#">Sobre</a>
         <div class="dropdown-menu">
-          <a href="">Nossa História</a>
-          <a href="">Governança</a>
-          <a href="">Transparência e prestação de contas</a>
-          <a href="">Notícias</a>
+          <a href="nossahistoria.html">Nossa História</a>
+          <a href="governanca.html">Governança</a>
+          <a href="transparencia.html">Transparência e prestação de contas</a>
         </div>
       </li>
       <li class="dropdown">
@@ -75,14 +78,43 @@
           <a href="">Cooperação Técnica</a>
         </div>
       </li>
-      <li><a href="#">Atendimento</a></li>
+      <li><a href="atendimento.html">Atendimento</a></li>
     </ul>
   </nav>
+  <nav class="sidebar" id="sidebar">
+	<a href="index.html" class="underline-none"><div class="menu-item" onclick="toggleSubmenu(this)">HOME<span></span></div></a>
+    <div class="menu-item" onclick="toggleSubmenu(this)">SOBRE<span>&#65088;</span></div>
+    <div class="submenu">
+      <a href="nossahistoria.html">Nossa História</a>
+      <a href="governanca.html">Governança</a>
+      <a href="transparencia.html">Prestação de contas</a>
+    </div>
+
+    <div class="menu-item" onclick="toggleSubmenu(this)">ÁREA DE ATUAÇÃO <span>&#65088;</span></div>
+    <div class="submenu">
+      <a href="reabilitação.html">Centro de Reabilitação</a>
+      <a href="#">Departamento Médico</a>
+      <a href="#">Espaço AFR+</a>
+      <a href="#">Pesquisas e Projetos</a>
+      <a href="#">Educação e Estágios</a>
+    </div>
+
+    <div class="menu-item" onclick="toggleSubmenu(this)">CONTATO<span>&#65088;</span></div>
+    <div class="submenu">
+      <a href="#">Faça uma visita</a>
+      <a href="#">Trabalhe Conosco</a>
+      <a href="#">Voluntariado</a>
+      <a href="#">Fale com a AFR</a>
+      <a href="#">Cooperação Técnica</a>
+    </div>
+
+    <a href="atendimento.html" class="underline-none"><div class="menu-item" onclick="toggleSubmenu(this)">ATENDIMENTO<span></span></div></a>
+  </nav> 
 <!-- Body abaixo -->
   <section>
 	<div class="titulo-imagem">
 		<img src="reabilitacao.avif" alt=" Centro de reabilitação"/>
-		<figcaption> Centro de Reabilitação </figcaption>
+		<figcaption> <strong>Centro de Reabilitação</strong> </figcaption>
 	</div>
 	
 	<div class="texto">

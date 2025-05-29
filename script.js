@@ -20,3 +20,12 @@ buttons.forEach(button => {
 document.getElementById('voltarTopo').addEventListener('click', function () {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
+
+function toggleMenu(button) {
+      button.classList.toggle('active');
+      document.getElementById('sidebar').classList.toggle('active');
+    }
+
+    function toggleSubmenu(menuItem) {
+      menuItem.classList.toggle('open');
+    }

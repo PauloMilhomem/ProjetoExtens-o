@@ -1,0 +1,160 @@
+PARA LINKAR PÁGINAS NO DJANGO
+
+Antes do DOCTTYPE:
+
+{% load static %}
+
+USAR O BLOCO ACIMA EM IMAGENS E PÁGINAS E JAVASCRIPT (HREFS)
+
+{% url 'index' %}
+{% static 'siteafr/style.css' %}
+{% static 'siteafr/images/logo.jpg' %}
+{% static 'siteafr/script.js' %}
+
+background-image: url("/siteafr/static/siteafr/images/imgpedrocert6.avif");
+
+
+INÍCIO ATÉ O NAV:
+
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Associação Fluminense de Reabilitação | Brasil</title>
+  <link rel="stylesheet" href="{% static 'siteafr/doacao.css' %}" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header class="top-header">
+    <div class="logo-container">
+      <a href="{% url 'index' %}"><img src="{% static 'siteafr/images/logo.jpg' %}" alt="Logo da AFR" class="logo" title="Logo da AFR"/></a>
+    </div>
+    <div class="info-container">
+      <div class="info-block">
+        <i class="icons fa-solid fa-location-dot"></i>
+        <div class="column">
+          <span class="bold">Niterói, RJ</span>
+          <span>Rua Lopes Trovão, 301</span>
+        </div>
+      </div>
+      <div class="info-block">
+        <i class="icons fa-solid fa-envelope"></i>
+        <div class="column">
+          <span class="bold">afr@afr.org.br</span>
+          <span>Atendimento: 07:00 - 19:00</span>
+        </div>
+      </div>
+      <div class="info-block">
+        <i class="icons fa-solid fa-mobile-screen-button"></i>
+        <div class="column">
+          <span class="bold">(21) 2109-2626</span>
+          <span>Fale conosco!</span>
+        </div>
+      </div>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/AFROficial/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/afr.oficial/"target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.youtube.com/channel/UCU9QXygeNJ2Z7h2pfiiZ2uA"target="_blank"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+      <div class="info-block">
+        <a href="{% url 'doacao' %}" class="btn"><i class="icon-white fa-solid fa-heart"></i>Fazer Doação</a>
+      </div>
+    </div>
+    <button class="menu-toggle" onclick="toggleMenu(this)">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+  <nav class="main-nav">
+    <ul>
+      <li><a href="{% url 'index' %}">Home</a></li>
+      <li class="dropdown">
+        <a href="#">Sobre</a>
+        <div class="dropdown-menu">
+          <a href="{% url 'nossahistoria' %}">Nossa História</a>
+          <a href="{% url 'governanca' %}">Governança</a>
+          <a href="{% url 'transparencia' %}">Transparência e prestação de contas</a>
+          <a href="{% url 'certificacoes' %}">Certificações</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#">Área de atuação</a>
+        <div class="dropdown-menu">
+          <a href="{% url 'reabilitação' %}">Centro de Reabilitação</a>
+          <a href="">Departamento Médico</a>
+          <a href="">Espaço AFR+</a>
+          <a href="">Pesquisas e Projetos</a>
+          <a href="">Educação e Estágios</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a href="#">Contato</a>
+        <div class="dropdown-menu">
+          <a href="">Faça uma visita</a>
+          <a href="">Trabalhe Conosco</a>
+          <a href="">Voluntariado</a>
+          <a href="">Fale com a AFR</a>
+          <a href="">Cooperação Técnica</a>
+        </div>
+      </li>
+      <li><a href="{% url 'atendimento' %}">Atendimento</a></li>
+    </ul>
+  </nav>
+
+
+
+
+
+
+
+
+
+FOOTER TODAS PÁGINAS:
+
+
+
+<footer class="footer">
+  <div class="footer-header">
+    <a href="#"><img src="{% static 'siteafr/images/AFRIMG4.png' %}" alt="Logo da AFR" class="logo" title="Logo da AFR" id="voltarTopo"/></a>
+    <div class="social-icons-footer">
+      <a href="https://www.facebook.com/AFROficial/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/afr.oficial/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.youtube.com/channel/UCU9QXygeNJ2Z7h2pfiiZ2uA" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </div>
+  <div class="footer-content">
+    <div class="footer-column">
+      <h3>UNIDADES</h3>
+      <ul>
+        <li><a href="#">Associação Fluminense de Reabilitação</a></li>
+        <li><a href="#">Unidade de Reabilitação e Atendimento Especializado Lisaura Ruas</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>OUTRAS PÁGINAS</h3>
+      <ul>
+        <li><a href="#">Parceiros de Captação</a></li>
+        <li><a href="#">Imprensa</a></li>
+        <li><a href="#">Editais</a></li>
+        <li><a href="#">Perguntas Frequentes</a></li>
+        <li><a href="#">Guia</a></li>
+        <li><a href="#">Política de Privacidade</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>COMO AJUDAR</h3>
+      <ul>
+        <li><a href="{% url 'doacao' %}" class="btn-footer"><i class="icon-red fa-solid fa-heart"></i>Fazer Doação</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>CERTIFICAÇÕES</h3>
+      <ul>
+        <li><img src="{% static 'siteafr/images/CEBASCERTIFICACAO.png' %}" class="cert"/></li>
+      </ul>
+    </div>
+  </div>
+  </footer>
+<script src="{% static 'siteafr/script.js' %}"></script>

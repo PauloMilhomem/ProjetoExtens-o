@@ -272,8 +272,8 @@
     color:#E21C21;
     font-size:70px;
     position: absolute;
-    top: 320px;
-    left: 700px;	
+    top: 350px;
+    right: 80px;	
     
  }
  .text-atd{
@@ -526,7 +526,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
+    padding: 20px 15px;
     background-color: #fff;
     border-bottom: 1px solid #ddd;
   }
@@ -598,7 +598,7 @@
     display: none;
     position: absolute;
     width: 250px;
-    height: 643px;
+    height: 900px;
     background: #fff;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
     transition: 0.3s;
@@ -837,6 +837,7 @@
     font-weight: bold;
     text-decoration: none;
     transition: 0.25s ease, color 0.25s ease;
+    width: 150px;
   }
   .btn-footer:hover{
     background-color: #7e1d1d;
@@ -881,8 +882,8 @@
     color:#E21C21;
     font-size:70px;
     position: absolute;
-    top: 320px;
-    left: 700px;	
+    top: 350px;
+    left: 900px;	
     
  }
  .text-atd{
